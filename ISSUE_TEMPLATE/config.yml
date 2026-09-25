@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Contexto del proyecto
+    url: https://github.com/planazo-team/planazo-frontend/blob/main/docs/contexto.md
+    about: Antes de abrir un issue, revisa si ya está decidido aquí.

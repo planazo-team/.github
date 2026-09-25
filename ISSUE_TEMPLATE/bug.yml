@@ -1,0 +1,28 @@
+name: Bug
+description: Algo que no hace lo que dice el contrato o la historia
+labels: ["bug"]
+body:
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué pasa
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué debería pasar (y dónde lo dice el contrato)
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Cómo reproducirlo
+      placeholder: "curl ... / pasos en la app / script k6"
+    validations:
+      required: true
+  - type: dropdown
+    id: modo
+    attributes:
+      label: Dónde
+      options: ["local (docker compose)", "local (servicio suelto)", "Railway / Vercel"]

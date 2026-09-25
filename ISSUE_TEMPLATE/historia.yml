@@ -1,0 +1,39 @@
+name: Historia de usuario
+description: Una historia del MVP, con su reto y su criterio de aceptación
+title: "HU-: "
+labels: ["feature"]
+body:
+  - type: input
+    id: hu
+    attributes:
+      label: Código de la historia
+      placeholder: "HU-17"
+    validations:
+      required: true
+  - type: dropdown
+    id: reto
+    attributes:
+      label: Reto técnico que demuestra
+      options: ["Ninguno", "RT-1", "RT-2", "RT-3", "CC-1", "CC-2", "CC-3"]
+    validations:
+      required: true
+  - type: textarea
+    id: historia
+    attributes:
+      label: Historia
+      placeholder: "Como cliente quiero ... para ..."
+    validations:
+      required: true
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Criterios de aceptación
+      description: Para recurso finito incluye "cero sobreventas bajo carga". Para tiempo real, "sin pérdida ni duplicados al reconectar".
+      placeholder: "- Dado ... cuando ... entonces ..."
+    validations:
+      required: true
+  - type: textarea
+    id: contrato
+    attributes:
+      label: ¿Toca el contrato?
+      placeholder: "No / Sí: agrega el campo X a Y"
